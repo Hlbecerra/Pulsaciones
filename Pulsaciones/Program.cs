@@ -20,7 +20,7 @@ namespace Pulsaciones
 
             switch (Sexo)
             {
-                case f: 
+                case 'f':  
 
             }
     
