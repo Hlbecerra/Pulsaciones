@@ -17,7 +17,8 @@ namespace Pulsaciones
             Sexo = char.Parse(Console.ReadLine());
             Console.Write("Digite el tiempo en segundos: ");
             Tiempo = int.Parse(Console.ReadLine());
-
+            //Esto es una prueba para que veas lo gay que eres;
+           
             switch (Sexo)
             {
                 case f: 
