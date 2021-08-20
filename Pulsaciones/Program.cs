@@ -11,20 +11,27 @@ namespace Pulsaciones
         static void Main(string[] args)
         {
             char Sexo;
-            int Tiempo;
+            int Edad, Pulsaciones;
 
-            Console.Write("Digite el sexo (F/M): ");
-            Sexo = char.Parse(Console.ReadLine());
-            Console.Write("Digite el tiempo en segundos: ");
-            Tiempo = int.Parse(Console.ReadLine());
-            //Esto es una prueba para que veas lo gay que eres;
-            //asdasfasdas
-            switch (Sexo)
+            do
             {
-                case 'f':  
+                Console.WriteLine("Digite el sexo (F/M): ");
+                Sexo = char.Parse(Console.ReadLine());
+            } while (Sexo != 'f' && Sexo != 'F' && Sexo != 'm' && Sexo != 'M');
+            Console.WriteLine("Digite su edad: ");
+            Edad = int.Parse(Console.ReadLine());
 
+            if (Sexo == 'f' || Sexo == 'F')
+            {
+                Pulsaciones = (220 - Edad) / 10;
             }
-    
+            else if (Sexo == 'm' || Sexo == 'M')
+            {
+                Pulsaciones = (210 - Edad) / 10;
+            }
+
+            Console.WriteLine("Las pulsaciones por cada 10s son: {0}", Pulsaciones);
+            Console.ReadKey();
         }
     }
 }
