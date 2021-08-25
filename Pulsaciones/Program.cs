@@ -10,22 +10,22 @@ namespace Pulsaciones
     {
         static void Main(string[] args)
         {
-            char Sexo;
-            int Edad;
-            int Pulsaciones;
+            char sexo;
+            int edad;
+            int pulsaciones;
             Console.WriteLine("Digite el sexo (F/M): ");
-            Sexo = char.Parse(Console.ReadLine());
+            sexo = char.Parse(Console.ReadLine());
             Console.WriteLine("Digite la edad");
-            Edad = int.Parse(Console.ReadLine());
-            if (Sexo.Equals('F'))
+            edad = int.Parse(Console.ReadLine());
+            if (sexo.Equals('F'))
             {
-                Pulsaciones = (220 - Edad) / 10;
+                pulsaciones = (220 - edad) / 10;
             }
             else
             {
-                Pulsaciones = (210 - Edad) / 10;
+                pulsaciones = (210 - edad) / 10;
             }
-            Console.WriteLine("Las pulsaciones son: " + Pulsaciones);
+            Console.WriteLine("Las pulsaciones son: " + pulsaciones);
             Console.ReadKey();
         }
     }
